@@ -1,9 +1,9 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Basic Document Formatting}{1}{section.2}%
-\contentsline {section}{\numberline {3}Mathematics}{3}{section.3}%
-\contentsline {section}{\numberline {4}Computer Science}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Algorithms}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Environments \& Code}{3}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Utilities}{3}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Images}{3}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Tables}{3}{subsection.5.2}%
+\contentsline {section}{\numberline {2}Basic Document Formatting}{2}{section.2}%
+\contentsline {section}{\numberline {3}Mathematics}{4}{section.3}%
+\contentsline {section}{\numberline {4}Computer Science}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Algorithms}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Environments \& Code}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Utilities}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Images}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Tables}{6}{subsection.5.2}%

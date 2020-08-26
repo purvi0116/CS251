@@ -1,26 +1,61 @@
-\documentclass[12pt, letterpaper]{article}
+%the margins are different
+%font size is differnt
+%citations ka mark is left
+%do u need letterpaper??
+%list on page 2 isnt correct
+\documentclass[10pt, Computer Modern]{article}
 \usepackage{xcolor}
 \usepackage[parfill]{parskip}
 \usepackage{ragged2e}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[a4paper]{geometry}
+\usepackage{enumitem} % for controlling line spacing in the list
+\usepackage[bottom]{footmisc} %to make the footnote stick at the bottom of page
+\newgeometry{left=1.2in, right=1.2in, bottom=1.5in}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{190050087-190050090}
+\rhead{Software Systems Laboratory}
+\cfoot{Page \thepage}
+\renewcommand{\footrulewidth}{1 pt}
 %before \begin is the PREAMBLE
 \begin{document}
 %document environment
-\title{LaTeX Starter Pack}
+\title{\LaTeX\ Starter Pack}
 \author{190050087-190050090}
 \date{August 30, 2020 }
 \maketitle
 \tableofcontents
+\thispagestyle{empty}
+\clearpage
+\pagenumbering{arabic}
+
 
 \section{Introduction}
 \label{intro}
+\LaTeX\ (most popularly pronounced lay-tech; sometimes laa-tech) is an incredibly efficient office tool to typeset professional looking documents and reports. You will certainly find it useful to write assignments, format your resume, and more generally, to make everything you do look cooler.
+
+
+
+
+\LaTeX\, like HTML, is a \textbf{markup language.} Is's part of the \TeX\ typesetting system created by the immortal Donald Knuth. The presentation of the content depends on the properties of the tags it is wrapped in. For more involved typesetting purposes, thius gives it a clear edge over mainstream word processors like \textcolor{blue}{MS-Word}: in Word, \textit{what you see is what you get,} and getting what you want can be insanely tough.
+
+
+
+
+Here's how it works: you write your markup commands in the source file, which has a \verb!.tex! extension. You need "software", or formally, a \TeX\ distribution, to actually typeset them into a format suitable for distribution, which is generally a pdf. The most popular distribution to install on your machine is \TeX\ Live; Mik\TeX\ is an alternative. You could also work online with Overleaf-no installations, and a ridiculously straightforward workflow. This is ideal for smaller projects. Weigh your options \href{https://www.latex-project.org/get/}{here}. Yes, a hyperlink!
+
+
+\clearpage
+
+
 \section{Basic Document Formatting}
 \label{formatting}
-%Page 2
+
+In STEM, brevity is highly valued. You want to put forth your arguments as crisply as possible. Of course, sometimes a rather long clarification may be in order\footnote{Footnotes are a classy way to do that. Making footnotes is fairly simple in \LaTeX\ .}, however, it is better to stick to the central theme and not disrupt the flow. In order to make your point, lists are often the cleanest option.
+
 \textbf{ Features we demonstrate}
-
-
-
 \begin{itemize}
 	\item Making a title and table of contents
 	\item Organising the document into sections
@@ -28,9 +63,9 @@
 	\item Designing our custom header and footer
 	\item Formatting text
 	\item Making (nested) lists
-	\begin{enumerate}
+	\begin{enumerate}[noitemsep]
 		\item itemize
-		\item enumerate
+		\item enumerate 
 		\item description
 	\end{enumerate}	
 	\item Footnotes
@@ -41,27 +76,39 @@
 	\item Algorithms and code
 	\item Inserting images
 	\item Drawing tables
-	\item Citations
+	\item \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+			Citations \footnote{using Bib\TeX\, which automatically takes care of the bibliography formatting}
 \end{itemize}	
+In order to make your lists appear more concise, you can specify the \verb!itemsep! parameter as am optional argument to the environment. You will need the \verb!enumitem! package for that.
 
 
 
 Descriptive lists are sometimes handy:
 
 
-\begin{description}
+\begin{description}[noitemsep]
 	\item [CS 207] Discrete Structures
 	\item [CS 213] Data Structures and Algorithms
 	\item [CS 215] Data Analysis and Interpretation
 	\item [CS 251] Software Systems Lab
 	\item [CS 293] Data Structures and Algorithms Lab
 \end{description}	
+\textbf{The Page Layout}
+
+The paper size for this document is A4. The left and right margins are 1.2 inches each; the lower margin is 1.5 inches. The \verb!geometry! package is very convenient to set up and manipulate these dimensions.
+
+
+\clearpage
 \section{Mathematics}
 \label{maths}
+\clearpage
+
 \section{Computer Science}
 \label{cs}
 	\subsection{Algorithms}
 	\subsection{Environments \& Code}
+\clearpage
+
 \section{Utilities}
 \label{utils}
 	\subsection{Images}

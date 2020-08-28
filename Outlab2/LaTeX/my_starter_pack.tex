@@ -12,13 +12,26 @@
 \usepackage[a4paper]{geometry}
 \usepackage{enumitem} % for controlling line spacing in the list
 \usepackage[bottom]{footmisc} %to make the footnote stick at the bottom of page
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+
 \newgeometry{left=1.2in, right=1.2in, bottom=1.5in}
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{190050087-190050090}
 \rhead{Software Systems Laboratory}
 \cfoot{Page \thepage}
+\graphicspath{./ }
 \renewcommand{\footrulewidth}{1 pt}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
 %before \begin is the PREAMBLE
 \begin{document}
 %document environment
@@ -28,10 +41,10 @@
 \maketitle
 \tableofcontents
 \thispagestyle{empty}
-\clearpage
+
 \pagenumbering{arabic}
 
-
+\clearpage
 \section{Introduction}
 \label{intro}
 \LaTeX\ (most popularly pronounced lay-tech; sometimes laa-tech) is an incredibly efficient office tool to typeset professional looking documents and reports. You will certainly find it useful to write assignments, format your resume, and more generally, to make everything you do look cooler.
@@ -101,8 +114,63 @@ The paper size for this document is A4. The left and right margins are 1.2 inche
 \clearpage
 \section{Mathematics}
 \label{maths}
-\clearpage
 
+Make sure you have imported the \verb!amsmath!, \verb!amsthm!, \verb!amssymb!, and \verb!esint! packages, in that order. Have a look at the tutorial to understand how they work, and what theydo. In particular the \verb!amsthm! package makes defining ordered theorem-like environments very convinient.
+
+\begin{theorem}[Markov's Inequality]
+\label{markov's}
+If X is a non-negative random variable and a $ < $ 0 then
+\begin{equation*}
+P( X \geq a) \leq \frac{E( X )}{a}
+\end{equation*}
+
+\end{theorem}
+
+\begin{corollary}[Chebyshev's Inequality]
+\label{chebyshev's}
+Let X be an integrable random variable with finite expected value $\mu$ and finite variance $\sigma^2$ $\ne$ $0$. Then for any $k \in \mathbb{R},~ k > 0$,  
+\begin{equation*}
+P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}
+\end{equation*}
+
+\end{corollary}
+\begin{proof}
+Let the random variable $Y := (X - \mu)^2$. Observe that Y is a non-negative random variable; and from the definition of variance, $E(Y) = \sigma^2$, which is positive from the premise. Hence, we can appeal to Theorem \ref{markov's}
+\begin{equation*}
+P(Y \geq k^2\sigma^2) \leq \frac{\sigma^2}{k^2\sigma^2} = \frac{1}{k^2}
+\end{equation*}
+However, $P(Y \geq k^2\sigma^2) = P(|X - \mu| \geq k\sigma)$ and we are done.
+\end{proof} 
+Consider a plane $z = ax + by +c$. Usually, three points on the plane are sufficient to determine the parameters  $a$, $b$, $c$; however, we're given a data set of several points: $x$ and $y$ coordinates are known perfectly, but the $z$ coordinates are corrupted by a Gaussian noise $\mathcal{N}(0,1)$. Here's how we solve for the maximum likelihood estimates of the parameters:
+\begin{equation}\label{matrix}
+\begin{bmatrix}
+		\sum_{i}x_{i}^2	 &  \sum_{i}x_{i}{i}y_{i}   &  \sum_{i}x_{i} \\
+		\sum_{i}x_{i}y_{i}	 &  \sum_{i}y_{i}^2   &  \sum_{i}y_{i}  \\
+		\sum_{i}x_{i}	&   \sum_{i}y_{i}   &  \sum_{i}1   \\ 
+\end{bmatrix}
+\begin{bmatrix}
+	\hat{a}  \\  \hat{b}  \\ \hat{c}
+\end{bmatrix} = 
+\begin{bmatrix}
+	\sum_{i}x_{i}z_{i}  \\ \sum_{i}y_{i}z_{i}	\\ \sum_{i}z_{i}
+\end{bmatrix}
+\end{equation}
+The above equaion (we can also refer to it as equation \ref{matrix} as we created a label) is obtained by setting the partial derivatives of the log-liklihood to 0, e.g. $\frac{\partial \mathcal{L}}{\partial a} = 0$ etc.
+\\
+Observe that we also cross referenced Theorem \ref{markov's} in the proof of Corollary \ref{chebyshev's}. And here we just did it again. This is how we use labels in tandem with the \verb!hyperref! package.
+\begin{theorem}[De Morgan's Law]
+\label{morgan}
+$\neg (a \lor b) \iff \neg a~\and~\neg b$ 
+Alternately, in the context of sets, we have $\overline{\rm A \cup B} = \overline{\rm A} \cap \overline{\rm B}$
+%\begin{remark}
+%This is closely related to the following rule in the first order propositional logic: $\neg(\exists x.p(x%)) \iff \forall x.\neg(p(x))$
+%\end{remark}
+\end{theorem}	
+We almost always want to site sources for the claims we make, because when you publish, it's pointless to keep reinventing the wheel. For instance, the Kronecker's Theorem on simultaneous Diophantine approximations is a standard but powerful result, it makes sense to refer the reader to \cite[Chap. 7, Sec. 1.3, Prop. 7]{bourbaki1966general} for a statement and proof. This source is a book. Make sure you enter the relevant information in the appropriate fields in the Bib\TeX\ entry.
+
+
+In Computer Science, most citations are journal or conference papers. A discussion on algebraic numbers is incomplete without citing the Mignotte separation bounds, given in a modestly titled conference paper \cite{mignotte1982some}. We can even cite multiple sources with a single command \cite{bell2007positivity,renegar1992computational}. These are journal articles. If possible, it's best to also specify the volume and page numbers. Your aim shouls be to point the reader to what you're quoting as unambiguously as possible.
+\clearpage
 \section{Computer Science}
 \label{cs}
 	\subsection{Algorithms}
@@ -112,8 +180,22 @@ The paper size for this document is A4. The left and right margins are 1.2 inche
 \section{Utilities}
 \label{utils}
 	\subsection{Images}
-	\subsection{Tables}
 
+
+	You'll sometimes find the need to include images in your report. Ideally, the image should enhance the document. But yeah, you're probably going to use this technique for a rather dirty life hack. If a prop insists on a \LaTeX\ report, you're just going to dump a photo of your exquisite handwriting to save time, aren't you? \textit{Exploit this loophole at your own risk. The original author of this assignment can neither confirm nor deny his endorsement of the jugaad.}
+	
+	\includegraphics[scale=0.4]{aristotle.png}
+	\includegraphics[scale=0.6]{kripke.png}
+
+
+
+	Make sure you follow these links, so you know where the hyperlinks lead to when you typeset it yourself.
+
+	\subsection{Tables}
+	\clearpage
+
+	\bibliographystyle{plainurl}
+	\bibliography{my_starter_pack}
 
 
 %What is a quiet comment?

@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{bell2007positivity}
+Jason~P Bell and Stefan Gerhold.
+\newblock On the positivity set of a linear recurrence sequence.
+\newblock {\em Israel Journal of Mathematics}, 157(1):333--345, 2007.
+
+\bibitem{bourbaki1966general}
+Nicolas Bourbaki.
+\newblock {\em General Topology: Elements of Mathematics}.
+\newblock Addison-Wesley, 1966.
+
+\bibitem{mignotte1982some}
+Maurice Mignotte.
+\newblock Some useful bounds.
+\newblock In {\em Computer algebra}, pages 259--263. Springer, 1982.
+
+\bibitem{renegar1992computational}
+James Renegar.
+\newblock On the computational complexity and geometry of the first-order
+  theory of the reals. part i: Introduction. preliminaries. the geometry of
+  semi-algebraic sets. the decision problem for the existential theory of the
+  reals.
+\newblock {\em Journal of symbolic computation}, 13(3):255--299, 1992.
+
+\end{thebibliography}

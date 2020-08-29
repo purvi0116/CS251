@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.28)  30 AUG 2020 00:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.28)  28 AUG 2020 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**my_starter_pack.tex
-(./my_starter_pack.tex
+**Outlab2/LaTeX/my_starter_pack.tex
+(./Outlab2/LaTeX/my_starter_pack.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -134,7 +134,6 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count178
 \pdfmajorversion=\count179
-Package hyperref Info: Option `pageanchor' set `true' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -365,19 +364,36 @@ File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
 (/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen162
-\captionmargin@=\dimen163
-\captionwidth=\dimen164
-\caption@tempdima=\dimen165
-\caption@indent=\dimen166
-\caption@parindent=\dimen167
-\caption@hangindent=\dimen168
+\captionmargin=\dimen164
+\captionmargin@=\dimen165
+\captionwidth=\dimen166
+\caption@tempdima=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
 Package caption Info: Standard document class detected.
 )
 \c@float@type=\count279
@@ -389,9 +405,9 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
 \FR@everyfloat=\toks31
 \flrow@foot=\insert252
-\FB@wd=\dimen169
-\FBo@wd=\dimen170
-\FBc@wd=\dimen171
+\FB@wd=\dimen171
+\FBo@wd=\dimen172
+\FBc@wd=\dimen173
 \FBo@ht=\skip80
 \FBc@ht=\skip81
 \FBf@ht=\skip82
@@ -407,7 +423,7 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \Zhsize=\skip88
 \sZhsize=\skip89
 \flrow@rowbox=\box52
-\FR@Zunitlength=\dimen172
+\FR@Zunitlength=\dimen174
 \c@FBcnt=\count284
 \FPOScnt=\count285
 \LTleft=\skip90
@@ -415,86 +431,6 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTleft=\skip92
 \LTright=\skip93
 \flrow@types=\toks32
-)
-(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen173
-\WF@size=\dimen174
-\c@WF@wrappedlines=\count286
-\WF@box=\box53
-\WF@everypar=\toks33
-Package: wrapfig 2003/01/31  v 3.6
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-)
-\Gin@req@height=\dimen175
-\Gin@req@width=\dimen176
-)
-(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count287
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\algocf@hangindent=\skip94
-
-(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count288
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2013/03/29 ver 4.1
-)
-\skiptotal=\skip95
-\skiplinenumber=\skip96
-\skiprule=\skip97
-\skiphlne=\skip98
-\skiptext=\skip99
-\skiplength=\skip100
-\algomargin=\skip101
-\skipalgocfslide=\skip102
-\algowidth=\dimen177
-\inoutsize=\dimen178
-\inoutindent=\dimen179
-\interspacetitleruled=\dimen180
-\interspacealgoruled=\dimen181
-\interspacetitleboxruled=\dimen182
-\algocf@ruledwidth=\skip103
-\algocf@inoutbox=\box54
-\algocf@inputbox=\box55
-\AlCapSkip=\skip104
-\AlCapHSkip=\skip105
-\algoskipindent=\skip106
-\algocf@nlbox=\box56
-\algocf@hangingbox=\box57
-\algocf@untilbox=\box58
-\algocf@skipuntil=\skip107
-\algocf@capbox=\box59
-\algocf@lcaptionbox=\skip108
-\algoheightruledefault=\skip109
-\algoheightrule=\skip110
-\algotitleheightruledefault=\skip111
-\algotitleheightrule=\skip112
-\c@algocfline=\count289
-\c@algocfproc=\count290
-\c@algocf=\count291
-\algocf@algoframe=\box60
-\algocf@algobox=\box61
 )
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: 
@@ -528,14 +464,14 @@ Package: relsize 2013/03/29 ver 4.1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@theorem=\count292
-\c@lemma=\count293
-\c@corollary=\count294
+\c@theorem=\count286
+\c@lemma=\count287
+\c@corollary=\count288
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count295
-\l__pdf_internal_box=\box62
+\l__kernel_color_stack_int=\count289
+\l__pdf_internal_box=\box53
 )
 
 LaTeX Warning: Unused global option(s):
@@ -544,36 +480,36 @@ LaTeX Warning: Unused global option(s):
 (./my_starter_pack.aux)
 \openout1 = `my_starter_pack.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count296
-\scratchdimen=\dimen183
-\scratchbox=\box63
-\nofMPsegments=\count297
-\nofMParguments=\count298
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count299
-\MPscratchDim=\dimen184
-\MPnumerator=\count300
-\makeMPintoPDFobject=\count301
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count290
+\scratchdimen=\dimen175
+\scratchbox=\box54
+\nofMPsegments=\count291
+\nofMParguments=\count292
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count293
+\MPscratchDim=\dimen176
+\MPnumerator=\count294
+\makeMPintoPDFobject=\count295
+\everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -584,9 +520,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 44.
-\AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring OFF on input line 44.
+LaTeX Info: Redefining \selectfont on input line 37.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring OFF on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -597,11 +533,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count302
+\c@section@level=\count296
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./my_starter_pack.out) (./my_starter_pack.out)
 \@outlinefile=\write3
@@ -642,22 +578,22 @@ LaTeX Info: Redefining \nameref on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count303
+\c@lstlisting=\count297
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 5
-0.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 4
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
@@ -670,149 +606,79 @@ File: uesint.fd
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<ease-graph.png, id=61, 448.67625pt x 330.23375pt>
-File: ease-graph.png Graphic file (type png)
-<use ease-graph.png>
-Package pdftex.def Info: ease-graph.png  used on input line 94.
+<Outlab2/LaTeX/ease-graph.png, id=14, 448.67625pt x 330.23375pt>
+File: Outlab2/LaTeX/ease-graph.png Graphic file (type png)
+<use Outlab2/LaTeX/ease-graph.png>
+Package pdftex.def Info: Outlab2/LaTeX/ease-graph.png  used on input line 87.
 (pdftex.def)             Requested size: 264.51115pt x 194.69008pt.
 
 [2
 
- <./ease-graph.png>] [3
+ <./Outlab2/LaTeX/ease-graph.png>] [3] [4
 
-] [4] [5
+] [5]
 
-]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
+LaTeX Warning: Reference `markov's' on page 6 undefined on input line 172.
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-)
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-85.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 285.
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [6
+LaTeX Warning: Reference `matrix' on page 6 undefined on input line 192.
+
+
+LaTeX Warning: Reference `markov's' on page 6 undefined on input line 194.
+
+
+LaTeX Warning: Reference `chebyshev's' on page 6 undefined on input line 194.
+
+
+LaTeX Warning: Citation `bourbaki1966general' on page 6 undefined on input line
+ 203.
+
+
+LaTeX Warning: Citation `mignotte1982some' on page 6 undefined on input line 20
+6.
+
+
+LaTeX Warning: Citation `bell2007positivity' on page 6 undefined on input line 
+206.
+
+
+LaTeX Warning: Citation `renegar1992computational' on page 6 undefined on input
+ line 206.
+
+[6
+
+] [7
 
 ]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ’ in font cmr10!
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [7
+LaTeX Warning: File `aristotle.png' not found on input line 221.
 
-]
-<aristotle.png, id=191, 451.6875pt x 537.00626pt>
-File: aristotle.png Graphic file (type png)
-<use aristotle.png>
-Package pdftex.def Info: aristotle.png  used on input line 433.
-(pdftex.def)             Requested size: 180.67178pt x 214.79869pt.
-<kripke.png, id=192, 369.38pt x 350.30875pt>
-File: kripke.png Graphic file (type png)
-<use kripke.png>
-Package pdftex.def Info: kripke.png  used on input line 434.
-(pdftex.def)             Requested size: 221.6297pt x 210.18686pt.
- [8
 
- <./aristotle.png> <./kripke.png>] (./my_starter_pack.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
- [9
+! Package pdftex.def Error: File `aristotle.png' not found: using draft setting
+.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
- (./my_starter_pack.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
-Package rerunfilecheck Info: File `my_starter_pack.out' has not changed.
-(rerunfilecheck)             Checksum: A4886729EFFD278E77F095F0411C306E;488.
- ) 
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 	\includegraphics[scale=0.4]{aristotle.png}
+                                                 
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.221 	\includegraphics[scale=0.4]{aristotle.png}
+                                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
 Here is how much of TeX's memory you used:
- 13339 strings out of 481239
- 196963 string characters out of 5920377
- 713550 words of memory out of 5000000
- 28266 multiletter control sequences out of 15000+600000
- 544362 words of font info for 75 fonts, out of 8000000 for 9000
+ 10861 strings out of 481239
+ 159710 string characters out of 5920377
+ 441456 words of memory out of 5000000
+ 25901 multiletter control sequences out of 15000+600000
+ 543744 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,69p,823b,2463s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfrm1000.pfb>
-Output written on my_starter_pack.pdf (9 pages, 1069874 bytes).
-PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 93 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 39i,11n,45p,837b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

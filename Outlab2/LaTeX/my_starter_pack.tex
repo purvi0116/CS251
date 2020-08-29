@@ -7,7 +7,7 @@
 \usepackage{xcolor}
 \usepackage[parfill]{parskip}
 \usepackage{ragged2e}
-\usepackage{hyperref}
+\usepackage[pageanchor]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[a4paper]{geometry}
 \usepackage{enumitem} % for controlling line spacing in the list
@@ -19,8 +19,15 @@
 \usepackage{listings}
 \usepackage{hyperref}
 \usepackage{url}
-\usepackage{graphicx}
+%\usepackage{graphicx}
 \usepackage{floatrow}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage[ruled,lined,linesnumbered,commentsnumbered]{algorithm2e}
+\usepackage{amsfonts}
+\definecolor{DarkGreen}{rgb}{0.0, 0.5, 0.0}
+\definecolor{Maroon}{rgb}{0.8, 0.0, 0.0}
+\UseRawInputEncoding
 
 \newgeometry{left=1.2in, right=1.2in, bottom=1.5in}
 \pagestyle{fancy}
@@ -78,7 +85,7 @@ In this assignment, we will explore and demonstrate some features that often pro
 
 
 \raggedleft
-		\textcolor{brown}{{\huge C}{\large ARPE} {\huge D}{\large IEM!}}
+		\textcolor{Maroon}{{\huge C}{\large ARPE} {\huge D}{\large IEM!}}
 
 
 \raggedright
@@ -204,13 +211,98 @@ In Computer Science, most citations are journal or conference papers. A discussi
 \section{Computer Science}
 \label{cs}
 	\subsection{Algorithms}
+
+
+	We have used the algorithm2e package.
+
+
+	\begin{algorithm}
+	\DontPrintSemicolon
+	\KwData{Graph, source}
+	\KwResult{Distances of each vertex from the source and starting edges of the shortest paths}
+	\BlankLine
+	create priority queue Q of vertices of Graph //min-heap\;
+	\ForEach{$vertex$ $v$ $in$ $Graph$}{
+		$dist[v]\leftarrow \infty$\;
+		$prev[v]\leftarrow$ UNDEFINED\;
+		$add$ $v$ $to$ $Q$\;
+	}
+	$dist[source]\leftarrow 0$\;
+		\While{$Q$ $is$ $not$ $empty$}{
+			$u\leftarrow Q.extract()$\;
+			\ForEach{$neighbour$ $v \in Q$  $of$ $u$}{
+				$alt\leftarrow dist[u]+length(u,v)$\;
+				\If{$alt<dist[v]$}{
+				$dist[v]\leftarrow alt$\;
+				$prev[v]\leftarrow u$\;
+			}
+		}
+	}
+	\Return{$dist[], prev[]$}\;
+	\caption{Dijkstra’s Algorithm}\label{shortest_distance}
+	\end{algorithm}
+
+
 	\subsection{Environments \& Code}
 
 	
-
+\subsubsection*{}
+	\label{list:1}
 	\begin{center}
 		\textbf{\large Listing 1: [LaTeX]TeX}
+		\\
 		\textbf{\small The Listings Package}
+
+	\end{center}
+
+
+	\lstnewenvironment{case}
+	{
+	\lstset
+	{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    %basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\textbf,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    commentstyle=\color{DarkGreen},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{Maroon},
+    showspaces=false,                
+    showstringspaces=false,
+	}
+	} 
+	{
+	}
+	
+	%\begin{document}
+	%[caption=\textbf{\large{{[LaTeX]}TeX}}\\ \textbf{\small The Listings Package},label={list:1},language={[LaTeX]TeX}]
+	\raggedright
+	\begin{case}
+	\begin{lstlisting}
+	%Your code goes here.
+
+	%This is usually how to present code in \LaTeX, without worrying about accidentally invoking a macro. Yes, the text is displayed verbatim.
+	\end{lstlisting}
+	\label{trickq}
+	\end{case}
+
+	%\end{document}
+
+
+	For our document, however, we noticed that na\"ive methods don’t work, and defined a custom environment with \lstinline{\lstnewenvironment}. This takes care of title formatting and vertical spacing too! Our environment has a counter associated with it, and takes the language and title as arguments. Other code formatting options are specified with \lstinline{ \lstset{...}. You might want to have a look at the tutorial!
+
+
+\clearpage
+\subsubsection*{}
+	\label{list:2}
+	\begin{center}
+		\textbf{\large Listing 2: [LaTeX]TeX}
+		\\
+		\textbf{\small Algorithm Boilerplate}
 
 	\end{center}
 
@@ -220,29 +312,117 @@ In Computer Science, most citations are journal or conference papers. A discussi
 	{
     language=[LaTeX]TeX,
     breaklines=true,
-    basicstyle=\tt\scriptsize,
-    keywordstyle=\color{blue},
-    identifierstyle=\color{magenta},
+    %basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\textbf,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    commentstyle=\color{DarkGreen},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{Maroon},
+    showspaces=false,                
+    showstringspaces=false
 	}
 	%\begin{document}
+	%[caption=\textbf{\large{{[LaTeX]}TeX}}\\Algorithm Boilerplate,label={list:2},language={[LaTeX]TeX}]
+	\raggedright
 	\begin{lstlisting}
-	\begin{ lstlisting }
-	%Your code goes here.
-
-	%This is usually how to present code in \LaTeX, without worrying about accidentally invoking a macro. Yes, the text is displayed verbatim.
-	\end{ lstlistin }
-	\label{ trickq }
+	\documentclass{article}
+	%. . .
+	\usepackage[linesnumbered, ruled, vlined]{algorithm2e 
+	%. . .
+	\begin{document}
+	%. . .
+	\begin{algorithm}[h]
+	\caption{...}
+	\SetAlgoLined
+	\DontPrintSemicolon
+	\KwData{...}
+	\KwResult{...}
+	Statement \ ;
+	%Let magic happen here
+	$1+1=2$ \ ;
+	\end{algorithm}
+	%. . .
+	\end{document}
 	\end{lstlisting}
 
-	%\end{document}
 	
+\subsubsection*{}
+	\begin{center}
+		\textbf{\large Listing 3: Bash}
+		\\
+		\textbf{\small Another Language}
 
-	\begin{decument}
-	For our document, however, we noticed that na\"ive methods don’t work, and defined a custom environment with \lstnewenvironment. This takes care of title formatting and vertical spacing too! Our environment has a counter associated with it, and takes the language and title as arguments. Other code formatting options are specified with \lstset{...}. You might want to have a look at the tutorial!
-	\end{document}
+	\end{center}
 
+
+
+	\lstset
+	{
+    language=Bash,
+    breaklines=true,
+    %basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\textbf,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    commentstyle=\color{DarkGreen},
+    numberstyle=\tiny\color{gray},
+    showspaces=false,                
+    showstringspaces=false
+	}
+	%\begin{document}
+	\raggedright
+	\begin{lstlisting} 
+	#some keywords
+	for echo cat case if esac elif fi awk sed pwd while do
+	sudo apt−get update sleep
+	\end{lstlisting}
+
+
+\subsubsection*{}
+	\begin{center}
+		\textbf{\large Listing 4: Python}
+		\\
+		\textbf{\small Keywords, comments, strings}
+
+	\end{center}
+
+
+
+	\lstset
+	{
+    language=Python,
+    breaklines=true,
+    %basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\textbf,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    commentstyle=\color{DarkGreen},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{magenta},
+    showspaces=false,                
+	}
+	%\begin{document}
+	\raggedright
+	\begin{lstlisting} 
+	from numpy import *
+	#insanely powerful library
+	print("Hello_Everyone!")
+	\end{lstlisting}
+
+
+
+	The advantage of defining ordered environments like this is that you can refer to this pretty easily if
+	you’ve left a label properly. If you want to shift them around, the counter and the cross references
+	will do the adjustment automatically. Of the above, Listing \hyperlink{page.6}{1} is a fiendish trick question, and
+	Listing \hyperlink{page.7}{2} is rather benevolent.
 \clearpage
-
 \section{Utilities}
 \label{utils}
 	\subsection{Images}

@@ -1,6 +1,5 @@
 Saurav
 
-Commands:
 
 git config user.name "pragya"
 
@@ -16,7 +15,9 @@ git reflog
 
 git checkout 2b71b5d main.sh binaries/dep1 binaries/dep2 binaries/dep3 binaries/dep4 binaries/dep5
 
-bash main.sh
+bash main.sh 
+
+git add .
 
 git commit -m "Everything is fine again"
 
@@ -26,13 +27,11 @@ git show 2415f77
 
 rm -r *
 
-git commit -m "deleted all files"
-
-git add main.sh binaries/dep1 binaries/dep2 binaries/dep3 binaries/dep4 binaries/dep5 misc/file1.txt misc/file2.txt
+git add .
 
 git commit -m "deleted all files"
 
- git checkout eee93e8 main.sh binaries/dep1 binaries/dep2 binaries/dep3 binaries/dep4 binaries/dep5 misc/file1.txt misc/file2.txt
+git checkout 8e9c742 main.sh binaries/dep1 binaries/dep2 binaries/dep3 binaries/dep4 binaries/dep5 misc/file1.txt misc/file2.txt
 
 git commit -m "Everything is fine again"
 
@@ -42,8 +41,6 @@ git add main.sh
 
 git rebase --continue
 
-bash main.sh
+git add .
 
-git reflog
-
-git log
+git commit -m "culprit info added"

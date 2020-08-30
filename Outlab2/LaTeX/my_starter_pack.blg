@@ -10,42 +10,42 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: my_starter_pack.bib
 You've used 4 entries,
             2882 wiz_defined-function locations,
-            648 strings with 5690 characters,
-and the built_in function-call counts, 1767 in all, are:
-= -- 187
+            646 strings with 5641 characters,
+and the built_in function-call counts, 1485 in all, are:
+= -- 150
 > -- 40
-< -- 1
+< -- 0
 + -- 14
 - -- 10
-* -- 83
-:= -- 264
+* -- 56
+:= -- 238
 add.period$ -- 13
 call.type$ -- 4
 change.case$ -- 16
 chr.to.int$ -- 0
 cite$ -- 4
-duplicate$ -- 58
-empty$ -- 182
+duplicate$ -- 48
+empty$ -- 157
 format.name$ -- 10
-if$ -- 464
+if$ -- 394
 int.to.chr$ -- 0
 int.to.str$ -- 4
 missing$ -- 5
 newline$ -- 23
 num.names$ -- 8
-pop$ -- 40
+pop$ -- 41
 preamble$ -- 1
 purify$ -- 13
 quote$ -- 0
-skip$ -- 127
+skip$ -- 113
 stack$ -- 0
-substring$ -- 102
-swap$ -- 13
-text.length$ -- 1
+substring$ -- 45
+swap$ -- 4
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 14
 warning$ -- 0
-while$ -- 15
+while$ -- 10
 width$ -- 5
-write$ -- 46
+write$ -- 45

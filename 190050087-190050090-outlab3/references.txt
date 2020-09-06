@@ -1,0 +1,11 @@
+https://www.coursera.org/lecture/python-network-data/11-2-extracting-data-5LN6R  regex
+https://www.programiz.com/python-programming/regex  regex
+https://stackoverflow.com/questions/21907466/how-can-i-check-if-a-string-contains-only-numbers-comma-and-periods-with-regex 
+
+https://www.kite.com/python/answers/how-to-check-if-a-string-contains-only-numbers-in-python#:~:text=Use%20str.,are%20numeric%20digits%20or%20not.
+
+https://youtu.be/jTYiNjvnHZY  iterators, iterable
+
+
+
+https://www.geeksforgeeks.org/python-os-path-normpath-method/  for q2

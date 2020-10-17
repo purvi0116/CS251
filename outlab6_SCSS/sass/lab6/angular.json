@@ -123,12 +123,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "lab6",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  }
+    }},
+  "defaultProject": "lab6"
 }

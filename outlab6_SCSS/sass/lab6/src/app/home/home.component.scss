@@ -1,0 +1,43 @@
+$font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+.home{
+    margin:0px;
+    font-family: $font;
+    width:100%;
+    height:100%;
+    h3{
+        padding:100px;
+        margin-top:0px;
+        font-family: $font;
+        //font-size:1.5em;
+        font-weight:normal;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 767px){
+    .home{
+        background-image: url('/assets/form2.jpg');
+        background-size: cover;   
+    }
+    h3{
+        
+        width:60%;
+        color:#2D093D;
+       
+         
+     }
+}
+@media screen and (min-width: 768px){
+    .home{
+        background-image: url('/assets/1.jpg');
+        background-size: cover;
+    }
+    h3{
+        width:50%;
+        font-size:1.5em;
+        color:#260C0C;
+         
+     }
+}

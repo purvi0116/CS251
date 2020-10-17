@@ -4,14 +4,18 @@ import {ContactComponent} from './contact/contact.component'
 import {MyformComponent} from './myform/myform.component'
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HomeComponent} from './home/home.component'
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {path:'contact', component:ContactComponent},
   {path:'form', component:MyformComponent},
+  {path:'', component:HomeComponent},
+  { path: '**', redirectTo: 'contact' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),BrowserModule,FormsModule, ReactiveFormsModule],
+  imports: [RouterModule.forRoot(routes),BrowserModule,FormsModule, ReactiveFormsModule, CommonModule],
   exports: [RouterModule],
   declarations: [
     ContactComponent,

@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Form } from '../userForm';
 import { FormService } from '../services/form.service';
@@ -15,13 +15,14 @@ import { BrowserModule } from '@angular/platform-browser';
 export class  MyformComponent implements OnInit {
   url = 'https://cs251-outlab-6.herokuapp.com/initial_values/';
   public formData : Form;
-  errBlock = false;
-  postCalled=false;
+  errBlock:boolean = false;
+  postCalled:boolean=false;
+  incom:boolean=false;
   myform = new FormGroup({
-    name: new FormControl(),
-    email: new FormControl(),
-    feedback: new FormControl(),
-    comment: new FormControl()
+    name: new FormControl('',Validators.required),
+    email: new FormControl('',[Validators.required,Validators.email,Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')]),
+    feedback: new FormControl('',Validators.required),
+    comment: new FormControl('')
   })
   constructor(private _formService: FormService) { }
 
@@ -31,7 +32,7 @@ export class  MyformComponent implements OnInit {
   }
   onSubmit() {
     // TODO: Use EventEmitter with form value
-     
+    
     this._formService.postForm(this.myform) .subscribe((response)=> {
       console.log(response);
       console.log("all good..");
@@ -50,7 +51,20 @@ export class  MyformComponent implements OnInit {
       
     }  
     );
+    //this.router.navigate(['/form']);
     
+  }
+
+  closeAlert(){
+    this.postCalled=false;
+  }
+
+  incomplete(){
+    this.incom=true;
+  }
+
+  complete(){
+    this.incom=false;
   }
   
   

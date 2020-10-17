@@ -1,4 +1,8 @@
-$font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+//$font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:georgia;
+$lg-screen-background:'/assets/1.jpg';
+$small-screen-background:'/assets/form2.jpg';
+
 .home{
     margin:0px;
     font-family: $font;
@@ -8,36 +12,28 @@ $font:"Helvetica Neue", Helvetica, Arial, sans-serif;
         padding:100px;
         margin-top:0px;
         font-family: $font;
-        //font-size:1.5em;
         font-weight:normal;
-    }
-   
+    }  
 }
-
-
 
 @media screen and (max-width: 767px){
     .home{
-        background-image: url('/assets/form2.jpg');
+        background-image: url($small-screen-background);
         background-size: cover;   
     }
     h3{
-        
         width:60%;
-        color:#2D093D;
-       
-         
-     }
+        color:#2D093D;         
+    }
 }
 @media screen and (min-width: 768px){
     .home{
-        background-image: url('/assets/1.jpg');
+        background-image: url($lg-screen-background);
         background-size: cover;
     }
     h3{
         width:50%;
         font-size:1.5em;
-        color:#260C0C;
-         
+        color:#260C0C; 
      }
 }

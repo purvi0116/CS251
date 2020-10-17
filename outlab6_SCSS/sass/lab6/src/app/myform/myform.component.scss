@@ -9,22 +9,21 @@ $success-border:#AAEA6A;
 $fail-text:#CC3333;
 $fail:#F7E2E2;//#C1F291;
 $fail-border:#F4B3B3;
-$font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$offwhite:#ccc;
+//$font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:Georgia;
+
 .success-msg{
   font-family: $font;
-  //width:100%;
   padding:10px;
   background-color: $success;
   color:$success-text;
   border:1px solid $success-border;
-  //margin:auto;
   margin-top:5px;
   text-align: center;
   border-radius: 2px;
   margin-bottom:10px;
-  //margin-right:10px;
-
-
+  
   button, button:focus{
     font-family: $font;
     float:right;
@@ -37,144 +36,125 @@ $font:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .failure-msg{
   font-family: $font;
-  //width:100%;
   padding:10px;
   background-color: $fail;
   color:$fail-text;
   border:1px solid $fail-border;
-  //margin:auto;
   margin-top:5px;
   text-align: center;
   border-radius: 2px;
   margin-bottom:10px;
-  //margin-right:10px;
 
   button, button:focus{
     font-family: $font;
     float:right;
     background-color: $fail;
+    color:$fail-text;
+    font-weight:bold;
     border:none;
+    cursor: pointer;
   }
-
 }
 .myform{
+  font-size:1.10em;
   font-family: $font;
   color: $primary;
-    width:50%; //change to 100 % in mobile
-    margin:auto;
-    margin-top:100px;
-    border:1px solid $col1;
-    -webkit-box-shadow: 0px 0px 10px 3px #ccc; 
-    box-shadow:0px 0px 10px 3px  #ccc;
-    
-    padding:15px;
-    //padding-top:15px;
-    padding-right:20px ;
-    .form-div{
-      font-weight: bold;
-        margin:1px 0 5px 5px;
-        margin-bottom:10px;
-        height: auto;
-        label {
-            margin-bottom:5px;
-            float:left;
-            width:100%;
-        }
+  width:50%; //change to 100 % in mobile
+  margin:auto;
+  margin-top:100px;
+  border:1px solid $col1;
+  -webkit-box-shadow: 0px 0px 10px 3px $offwhite; 
+  box-shadow:0px 0px 10px 3px  $offwhite;
+  padding:15px;
+  padding-right:20px ;
+  .form-div{
+    font-weight: bold;
+    margin:1px 0 5px 5px;
+    margin-bottom:10px;
+    height: auto;
+    label {
+      margin-bottom:5px;
+      float:left;
+      width:100%;
+    } 
+    input[type=text]:focus {
+      font-family: $font;
+      float:left;
+      width:100%;
+      margin-bottom:10px;
+      border:none;
+      font-size:1.01em;
+    }
         
-      
-        input[type=text]:focus {
-          font-family: $font;
-            float:left;
-            width:100%;
-            margin-bottom:10px;
-            border:none;
-            font-size:1.01em;
-            
-          }
-        
-          .col-75{
-            font-family: $font;
-            float:left;
-            font-size:1.01em;
-            width:100%;
-            border:none;
-            padding: 0 20px 12px;
-            margin: 5px 0px 0 0 ;
-            box-sizing: border-box;
-            border-bottom:1px solid gray;
-            //  box-sizing: border-box;
-           // -webkit-transition: 0.5s;
-            transition: 0.5s;
-            outline: none;
-          }
+    .col-75{
+      font-family: $font;
+      float:left;
+      font-size:1.01em;
+      width:100%;
+      border:none;
+      padding: 0 20px 12px;
+      margin: 5px 0px 0 0 ;
+      box-sizing: border-box;
+      border-bottom:1px solid gray;
+      transition: 0.5s;
+      outline: none;
+    }
           
-          input[type=text]:focus,input[type=email]:focus {
-            border:none;
-            border-bottom: 3px solid #555;
-            margin: 5px 0px 0 0 ;
-            font-size:1.01em;
-          }
-          //col-75:focus {
-           // border:none;
-           // border-bottom: 3px solid #555;
-         //   margin: 5px 0px 0 0 ;
-         // }
-          .comment{
-            font-family: $font;
-            width: 100%;
-            padding: 0 20px 12px;
-            margin: 5px 0px 5px 0 ;
-            box-sizing: border-box;
-            border:none;           
-            border-bottom:1px solid gray;
-            //  box-sizing: border-box;
-            -webkit-transition: 0.5s;
-            transition: 0.5s;
-            outline: none;
-            font-size:1.01em;
-          }
-          textarea{
-            font-size:11em;
-            font-family: $font;
-          }
-          .comment:focus{
-            font-family: $font;
-            border:none;
-            border-bottom: 3px solid #555;
-            font-size:1.01em;
-          }
+    input[type=text]:focus,input[type=email]:focus {
+      border:none;
+      border-bottom: 3px solid #555;
+      margin: 5px 0px 0 0 ;
+      font-size:1.01em;
     }
+    .comment{
+      font-family: $font;
+      width: 100%;
+      padding: 0 20px 12px;
+      margin: 10px 0px 5px 0 ;
+      box-sizing: border-box;
+      border:none;           
+      border-bottom:1px solid gray;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+      font-size:1.01em;
+    }
+    textarea{
+      font-size:11em;
+      font-family: $font;
+    }
+    .comment:focus{
+      font-family: $font;
+      border:none;
+      border-bottom: 3px solid #555;
+      font-size:1.01em;
+    }
+  }
     
-    .radio-div{
-     margin:5px;      
-     
-     margin: 5px 0px 15px 5px ; 
-    }
-
-
-
-    .submit{
-       font-size:1.01em;
-        margin:5px;
-        width:100%;
-        height:40px;
-        margin-bottom:10px;
-    }
-    
-        
+  .radio-div{
+    margin:5px;      
+    margin: 5px 0px 20px 5px ; 
+  }
+  
+  .submit{
+    font-family: $font;
+    font-size:1.25em;
+    margin:5px;
+    width:100%;
+    height:40px;
+    margin-bottom:10px;
+  } 
 }
 
 .has-error {
-  
-   color:$fail-text;
+  color:$fail-text;
 }
+
 .error-span{
   margin:10px 0;
   margin-bottom:20px;
-  //padding:10px;
   color:$fail-text;
   span{
-    //margin-top:10px;
     font-size:.95em;
     font-weight: normal;
   }
@@ -183,23 +163,23 @@ $font:"Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;;
 }
 pre{
-    margin:auto;
-    margin-top:30px;
-    margin-bottom:30px;
-    width:50%;
-    padding:18px;
-    border-radius: 0px;
-    -webkit-box-shadow: 0px 0px 10px 3px #ccc; 
-    box-shadow:0px 0px 10px 3px  #ccc;
-    font-size:1.05em;
-
+  font-family: $font;
+  margin:auto;
+  margin-top:30px;
+  margin-bottom:30px;
+  width:50%;
+  padding:18px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 10px 3px $offwhite; 
+  box-shadow:0px 0px 10px 3px  $offwhite;
+  font-size:1.05em;
 }
 .submit{
   background-color: #484848;
   cursor: pointer;
-  color:#ccc;
+  color:$offwhite;
   border-radius: 2px;
-  
+  font-size:1.5em;
 }
 .submit:hover{
   background-color: #484848;

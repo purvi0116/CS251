@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 const routes: Routes = [
   {path:'contact', component:ContactComponent},
   {path:'form', component:MyformComponent},
-  {path:'', component:HomeComponent},
+  {path:'home', component:HomeComponent},
   { path: '**', redirectTo: 'contact' }
 ];
 

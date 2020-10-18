@@ -1,0 +1,12 @@
+https://fireship.io/lessons/basics-reactive-forms-in-angular/
+https://www.youtube.com/watch?v=TOyXHqL3MoM
+
+https://www.youtube.com/watch?v=xXpXn6X-xqs  error handling
+
+https://www.youtube.com/watch?v=SYBzE68Ee-g
+
+https://dzone.com/articles/introduction-of-scss SCSS
+
+https://www.youtube.com/watch?v=MPuXl1DS1vU REactive form validation
+https://stackoverflow.com/questions/51767885/angular-form-email-validator-not-working-as-expected
+https://www.youtube.com/watch?v=wktyHrlS-dk form validation

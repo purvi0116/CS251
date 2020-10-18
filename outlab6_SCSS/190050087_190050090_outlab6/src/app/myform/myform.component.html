@@ -1,0 +1,93 @@
+<!-- form group and form control directive-->
+
+
+<div class="myform">
+  <div *ngIf = "postCalled==true ">
+    <div class="failure-msg" *ngIf = "errBlock==true">
+      <strong>Try again!</strong> Your data could not be submitted.
+      <button (click)="closeAlert()">X</button>
+    </div>
+    <div class="success-msg"  *ngIf = "errBlock==false">
+      <strong>Success!</strong> Your data was submitted successfully.
+      <button (click)="closeAlert()">X</button>
+    </div>
+  </div>
+    <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+        
+        <div class="form-div" [ngClass]="{'has-error' : myform.get('name').errors && (myform.get('name').touched || myform.get('name').dirty )}">
+          
+          <label for="exampleInputPassword1">Name*</label>
+          <input  type="text" class="col-75" formControlName="name" placeholder="Your name">
+          <div class="error-span" *ngIf="myform.get('name').errors && (myform.get('name').touched || myform.get('name').dirty )">
+            <span *ngIf="myform.get('name').errors.required">Name is required</span>
+          </div> 
+          <div class="space" *ngIf="!(myform.get('name').errors && (myform.get('name').touched || myform.get('name').dirty ))">
+            <span >Name is required</span>
+          </div> 
+        </div>
+       
+        <div class="form-div" [ngClass]="{'has-error' : myform.get('email').errors && (myform.get('email').touched || myform.get('email').dirty )}">
+          <label for="exampleInputEmail1">Email address*</label>
+          <input  type="email" class="col-75" formControlName="email" placeholder="Your email">
+          <div class="error-span" *ngIf="myform.get('email').errors && (myform.get('email').touched || myform.get('email').dirty )">
+            <span *ngIf="myform.get('email').errors.required">Email is required</span>
+            <span *ngIf="(myform.get('email').errors.email || myform.get('email').errors.pattern)">Enter valid email</span>
+          </div>
+          <div class="space" *ngIf="!(myform.get('email').errors && (myform.get('email').touched || myform.get('email').dirty ))">
+            <span >Name is required</span>
+          </div> 
+        </div>
+        
+        <div class="radio-div" [ngClass]="{'has-error' : myform.get('feedback').errors && (myform.get('feedback').touched || myform.get('feedback').dirty )}"> 
+          <div style="width:100% ;  margin-bottom:10px;font-weight: bold;">Feedback*</div>
+        
+        <label class="radio-inline">
+          <input type="radio" formControlName="feedback" value="Great">Great
+        </label>
+        <label class="radio-inline">
+          <input type="radio" formControlName="feedback" value="Okay">Okay
+        </label>
+        <label class="radio-inline">
+          <input type="radio" formControlName="feedback" value="Not good">Not good
+        </label>
+        <span class="error-span" *ngIf="myform.get('feedback').errors && (myform.get('feedback').touched || myform.get('feedback').dirty )">
+          <span *ngIf="myform.get('feedback').errors.required">This field is required</span>
+        </span>
+        </div>
+        
+        <div class="form-div">
+          <label for="exampleFormControlTextarea1">Comments</label>
+          <textarea class="comment" formControlName="comment" rows="2" placeholder="Any suggestions..."></textarea>
+        </div>
+        <div *ngIf="myform.get('feedback').errors || myform.get('email').errors || myform.get('name').errors">
+          <button id="incom-form" class="off" (click)="incomplete()" type="submit" disabled class="submit" >
+            <strong>Submit</strong>
+        </button>
+        <span class="" >
+          <span>*Marked fields are required</span>
+        </span>
+
+        </div>
+        <div *ngIf="!(myform.get('feedback').errors || myform.get('email').errors || myform.get('name').errors)">
+          <button class="on" type="submit"  class="submit" >
+          <strong>Submit</strong>
+        </button>
+        </div>
+        
+      
+        
+      </form>
+  </div>
+ 
+   <div *ngIf = "formData!==undefined">
+    <!--{{formData.name}}
+    {{formData.email}}
+    {{formData.feedback}}
+    {{formData.comment}}-->
+   <!-- <div>{{formData | json}}</div> -->
+    <pre>{{formData | json}}</pre>
+   
+  </div>
+  
+  
+  

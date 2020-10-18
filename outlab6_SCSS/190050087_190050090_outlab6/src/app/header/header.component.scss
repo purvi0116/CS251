@@ -1,0 +1,57 @@
+$primary: #5c5470;
+$black:black;
+$hover:#ddd;
+$nav-back:#333;
+//$font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:Georgia;
+
+nav{
+  font-family:$font; 
+	height:10vh;
+  display: inline-block;
+  list-style: none;      
+  height:100%;
+  margin-left: 0;
+  
+  li a{
+    color: $black;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25em;
+  }   
+}
+.topnav {
+  overflow: hidden;
+  background-color: $nav-back;
+  font-family:$font; 
+  position:fixed;
+  top:0;
+  width: 100%;
+  a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.25em;
+  }
+  a:hover {
+    background-color: $hover ;
+    color: $black;
+  }     
+  .topnav-right {
+    float: right;
+  }
+}
+  
+  
+  
+  
+ 
+ 
+
+
+
+
+
+

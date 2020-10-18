@@ -28,7 +28,7 @@
        
         <div class="form-div" [ngClass]="{'has-error' : myform.get('email').errors && (myform.get('email').touched || myform.get('email').dirty )}">
           <label for="exampleInputEmail1">Email address*</label>
-          <input  type="email" class="col-75" formControlName="email" placeholder="Enter email">
+          <input  type="email" class="col-75" formControlName="email" placeholder="Your email">
           <div class="error-span" *ngIf="myform.get('email').errors && (myform.get('email').touched || myform.get('email').dirty )">
             <span *ngIf="myform.get('email').errors.required">Email is required</span>
             <span *ngIf="(myform.get('email').errors.email || myform.get('email').errors.pattern)">Enter valid email</span>

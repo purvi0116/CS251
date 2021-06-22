@@ -1,2 +1,2 @@
 # CS251
-Github repo for all CS251 lab assignments
+Github repo for Lab6 - Angular lab assignment
